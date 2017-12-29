@@ -1,0 +1,101 @@
+.sidebar-container {
+   color: white;
+   padding-top: 80px;
+   padding-bottom: 20px;
+   text-align: center;
+}
+
+.sidebar-container a {
+   color: inherit;
+   text-decoration: inherit;
+}
+
+.face {
+   margin: auto;
+   border-radius: 50%;
+   width: 156px;   
+   height: 156px;
+   border: 3px solid white;
+   box-shadow: 0 5px 30px black;
+   animation: 0.8s ease-in-out 0.2s 1 zoom;
+   animation-fill-mode: backwards;
+}
+
+@keyframes zoom {
+   0% {
+      transform: scale(0.5);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+.face img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   transition: none;
+}
+
+.face img:hover {
+   transition: transform 5s ease-in-out;
+   transform: rotate(3600deg);
+}
+
+.fullname {
+   margin-top: 30px;
+   position: relative;
+}
+.fullname div {
+   font-size: 3em;
+   font-family: 'Libre Barcode 39 Text', cursive;
+   transition: all 0.5s ease-in;
+}
+
+.fullname-alter {
+   opacity: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+.fullname-base {
+   opacity: 1;
+}
+.fullname:hover .fullname-alter {
+   opacity: 1;
+}
+.fullname:hover .fullname-base {
+   opacity: 0;
+}
+
+.menu {
+   margin-top: 80px;
+   text-align: right;
+   line-height: 45px;
+}
+
+/* desktop only */
+@media (min-width : 768px) {
+   .menu {
+      opacity: 0.5;
+      transition: all 0.2s ease-in-out;   
+   }      
+   .sidebar-container:hover .menu {
+      opacity: 1;
+   }
+}
+
+.menu a {
+   border-radius: 50px;
+   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   background-color: rgba(0, 0, 0, 0.5);
+   transition: all 0.2s ease-in-out;
+}
+.menu a:hover {
+   padding-left: 30px;
+   padding-right: 30px;
+   background-color: rgba(0, 0, 0, 0.2);
+}
