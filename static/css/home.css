@@ -25,10 +25,7 @@
 
 /* Add rounded corners to the top left and the top right corner of the image */
 .card img {
-   display: block;
    max-width:100%;
-   width: auto;
-   height: auto; 
    border-radius: 5px 5px 0 0;
 }
 

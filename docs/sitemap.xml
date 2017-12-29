@@ -25,6 +25,10 @@
   </url>
   
   <url>
+    <loc>https://suxsem.github.io/portfolio/projects/drones/</loc>
+  </url>
+  
+  <url>
     <loc>https://suxsem.github.io/portfolio/projects/sport/</loc>
   </url>
   
@@ -36,6 +40,10 @@
   <url>
     <loc>https://suxsem.github.io/portfolio/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://suxsem.github.io/portfolio/projects/university/</loc>
   </url>
   
 </urlset>
