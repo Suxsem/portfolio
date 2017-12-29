@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer science on Stefano Semeraro</title>
-    <link>/projects/computer/</link>
+    <link>suxsem.github.io/portfolio/projects/computer/</link>
     <description>Recent content in Computer science on Stefano Semeraro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/projects/computer/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="suxsem.github.io/portfolio/projects/computer/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -1,12 +1,10 @@
 body {
-   background-image: url('/img/backgroundMain.jpeg');
    background-repeat: repeat;
    background-attachment: fixed;
    font-family: 'Montserrat', sans-serif;   
 }
 
 .sidebar {
-   background-image: url('/img/background.jpg');
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position-y: 0;

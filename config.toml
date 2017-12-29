@@ -1,5 +1,8 @@
-baseURL = "/"
-relativeurls = true
+baseURL = "suxsem.github.io/portfolio/"
+relativeurls = false
+canonifyURLs = true
+
 languageCode = "en-us"
 title = "Stefano Semeraro"
 enableEmoji = true
+publishDir = "docs"
