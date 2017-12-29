@@ -1,0 +1,44 @@
+.main-content {
+   text-align: center;
+   padding: 20px;   
+}
+
+/* desktop only */
+@media (min-width : 768px) {
+   .main-content {
+      padding: 50px;
+   }
+}
+
+.main-content a {
+   color: inherit;
+   text-decoration: inherit;
+}
+
+.card {
+   display: inline-block;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+   border-radius: 5px; /* 5px rounded corners */
+   margin-bottom: 30px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card img {
+   display: block;
+   max-width:100%;
+   width: auto;
+   height: auto; 
+   border-radius: 5px 5px 0 0;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+   padding: 16px;
+   text-align: center;
+}

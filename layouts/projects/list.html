@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+projects list layout
+
+{{ .Content }}
+
+<ul>
+
+{{ range .Pages }}
+
+   <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+   </li>
+
+{{ end }}
+
+</ul>
+
+{{ end }}

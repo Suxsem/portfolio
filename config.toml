@@ -1,0 +1,5 @@
+baseURL = "/"
+relativeurls = true
+languageCode = "en-us"
+title = "Stefano Semeraro"
+enableEmoji = true

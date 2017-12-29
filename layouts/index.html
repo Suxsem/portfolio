@@ -1,0 +1,26 @@
+{{ define "main" }}   
+   
+   {{ .Content }}
+   
+   <div class="row">
+
+   {{ range where .Sections "Section" "projects" }}
+   {{ range .Sections }}
+
+   <div class="col-12 col-md-4">
+      <a href="{{ .Permalink }}">
+         <div class="card">
+            <img src="{{ .Params.Background }}"/>
+            <div class="container">
+               <span>{{ .Title }}</span>
+            </div>
+         </div>
+      </a>
+   </div>
+
+   {{ end }}   
+   {{ end }}
+
+   </div>
+   
+{{ end }}
