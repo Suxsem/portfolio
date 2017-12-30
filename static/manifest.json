@@ -3,10 +3,10 @@
   "name": "Stefano Semeraro",
   "icons": [
     {
-      "src": "/img/appicon.png",
+      "src": "/portfolio/img/appicon.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.html"
+  "start_url": "/portfolio/index.html"
 }
