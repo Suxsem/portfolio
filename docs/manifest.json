@@ -8,5 +8,6 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/portfolio/index.html"
+  "start_url": "/portfolio/index.html",
+  "display": "fullscreen"
 }
