@@ -1,0 +1,12 @@
+{
+  "short_name": "Stefano Semeraro",
+  "name": "Stefano Semeraro",
+  "icons": [
+    {
+      "src": "/img/appicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html"
+}

@@ -8,9 +8,16 @@
    {{ range .Sections }}
 
    <div class="col-12 col-md-4">
-      <a href="{{ .Permalink }}">
+      <a href="#" onClick="lightbox({{ .Params.Background }}, {{ .Title }}, {{ .Description }}, {{ .Permalink }}); return false;">
          <div class="card">
-            <img src="{{ .Params.Background }}"/>
+            <div class="img-container">
+               <img src="{{ .Params.Background }}"/>
+               <div class="img-overlay">
+                  <div class="img-overlay-content">
+                     <i class="fas fa-expand"></i> discover
+                  </div>
+               </div>
+            </div>
             <div class="container">
                <span>{{ .Title }}</span>
             </div>
@@ -22,5 +29,7 @@
    {{ end }}
 
    </div>
+
+   {{ partial "lightbox" . }}
    
 {{ end }}

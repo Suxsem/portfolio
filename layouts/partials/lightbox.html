@@ -1,0 +1,20 @@
+<div class="lightbox-container" onclick="lightboxClose(); return false;">
+   <div class="lightbox" onclick="event.stopPropagation();">
+      <a href="#" onclick="lightboxClose(); return false;">
+         <div class="lightbox-close">
+            <i class="far fa-times-circle"></i>
+         </div>
+      </a>
+      <div class="lightbox-img">
+         <img id="lightbox-img" />
+      </div>
+      <div class="lightbox-content">
+         <h1 id="lightbox-title"></h1>
+         <hr />
+         <div id="lightbox-description" class="lightbox-description">
+         </div>
+         <a id="lightbox-btn"><div class="lightbox-btn">discover</div></a>
+         <div class="clearfix"></div>            
+      </div>
+   </div>
+</div>
