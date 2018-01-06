@@ -1,32 +1,23 @@
+{{ define "localHead" }}
+   <link rel="stylesheet" href="/css/home.css" />
+   <link rel="stylesheet" href="/css/card.css" />
+{{ end }}
+
 {{ define "main" }}   
    
    {{ .Content }}
    
    <div class="row">
 
-   {{ range where .Sections "Section" "projects" }}
-   {{ range .Sections }}
+      {{ range where .Sections "Section" "projects" }}
+      {{ range .Sections }}
 
-   <div class="col-12 col-md-4">
-      <a href="#" onClick="lightbox({{ .Params.Background }}, {{ .Title }}, {{ .Description }}, {{ .Permalink }}); return false;">
-         <div class="card">
-            <div class="img-container">
-               <img src="{{ .Params.Background }}"/>
-               <div class="img-overlay">
-                  <div class="img-overlay-content">
-                     <i class="fas fa-expand"></i> discover
-                  </div>
-               </div>
-            </div>
-            <div class="container">
-               <span>{{ .Title }}</span>
-            </div>
-         </div>
-      </a>
-   </div>
+      <div class="col-12 col-md-4">
+         {{ partial "card" . }}         
+      </div>
 
-   {{ end }}   
-   {{ end }}
+      {{ end }}   
+      {{ end }}
 
    </div>
 

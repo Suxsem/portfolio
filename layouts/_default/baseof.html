@@ -2,6 +2,8 @@
 <html>
    
    {{ partial "head" . }}
+   {{ block "localHead" . }}
+   {{ end }}   
       
    <body style="background-image: url('{{"img/backgroundMain.jpg" | absURL }}');">
 

@@ -1,19 +1,24 @@
-{{ define "main" }}
-
-projects list layout
-
-{{ .Content }}
-
-<ul>
-
-{{ range .Pages }}
-
-   <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-   </li>
-
+{{ define "localHead" }}
+   <link rel="stylesheet" href="/css/projects.css" />
+   <link rel="stylesheet" href="/css/card.css" />
 {{ end }}
 
-</ul>
+{{ define "main" }}
+
+   {{ .Content }}
+
+   <div class="row">
+
+      {{ range .Pages }}
+
+      <div class="col-12 col-md-4">
+         {{ partial "card" . }}         
+      </div>
+
+      {{ end }}
+
+   </div>
+
+   {{ partial "lightbox" . }}
 
 {{ end }}
