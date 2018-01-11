@@ -14,20 +14,26 @@
    <link rel="stylesheet" href="https://suxsem.github.io/portfolio/css/main.css" />
    <link rel="stylesheet" href="https://suxsem.github.io/portfolio/css/sidebar.css" />
    <link rel="stylesheet" href="https://suxsem.github.io/portfolio/css/footer.css" />
-   <link rel="stylesheet" href="https://suxsem.github.io/portfolio/css/home.css" />
    <link rel="stylesheet" href="https://suxsem.github.io/portfolio/css/lightbox.css" />
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+   <noscript>
+         <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">   
+   </noscript>
    <script src="https://suxsem.github.io/portfolio/js/preserveScroll.js"></script>
    <script src="https://suxsem.github.io/portfolio/js/backgroundParallax.js"></script>
    <script src="https://suxsem.github.io/portfolio/js/lightbox.js"></script>
    
 </head>
+   
+   <link rel="stylesheet" href="https://suxsem.github.io/portfolio/css/projects.css" />
+   <link rel="stylesheet" href="https://suxsem.github.io/portfolio/css/card.css" />
+   
       
    <body style="background-image: url('https://suxsem.github.io/portfolio/img/backgroundMain.jpg');">
 
-      <div class="container-fluid">
+      <div class="container-fluid noBarHide">
       
          <div class="row">
 
@@ -35,7 +41,7 @@
                <div class="sidebar-container">
          
    <div class="face">
-      <a href="javascript:void(0);"><img src="img/face.jpg" /></a>
+      <a href="javascript:void(0);"><img src="https://suxsem.github.io/portfolio/img/face.jpg" /></a>
    </div>
 
    <div class="fullname">
@@ -58,15 +64,59 @@
                   
             
 
-projects list layout
+   
 
+   <div class="projects-header">
+      <h2>Computer science</h2>
+   </div>
+   
 
+   <div class="row">
 
-<ul>
+      
 
+      <div class="col-12 col-md-6">
+         <a href="https://suxsem.github.io/portfolio/projects/computer/car/" onClick="lightbox(&#34;https://images.pexels.com/photos/760979/pexels-photo-760979.jpeg?h=350\u0026auto=compress\u0026cs=tinysrgb&#34;, &#34;Car&#34;, &#34;&#34;, &#34;https://suxsem.github.io/portfolio/projects/computer/car/&#34;); return false;">
+   <div class="card">
+      <div class="img-container">
+         <img src="https://images.pexels.com/photos/760979/pexels-photo-760979.jpeg?h=350&amp;auto=compress&amp;cs=tinysrgb"/>
+         <div class="img-overlay">
+            <div class="img-overlay-content">
+               <i class="fas fa-expand"></i> discover
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <span>Car</span>
+      </div>
+   </div>
+</a>         
+      </div>
 
+      
 
-</ul>
+   </div>
+
+   <div class="lightbox-container" onclick="lightboxClose(); return false;">
+   <div class="lightbox" onclick="event.stopPropagation();">
+      <a href="#" onclick="lightboxClose(); return false;">
+         <div class="lightbox-close">
+            <i class="far fa-times-circle"></i>
+         </div>
+      </a>
+      <div class="lightbox-img">
+         <img id="lightbox-img" />
+      </div>
+      <div class="lightbox-content">
+         <h1 id="lightbox-title"></h1>
+         <hr />
+         <div id="lightbox-description" class="lightbox-description">
+         </div>
+         <a id="lightbox-btn"><div class="lightbox-btn">discover</div></a>
+         <div class="clearfix"></div>            
+      </div>
+   </div>
+</div>
 
 
 

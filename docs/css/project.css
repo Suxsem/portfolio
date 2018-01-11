@@ -1,0 +1,28 @@
+.main-content {
+   padding: 20px;
+}
+
+/* desktop only */
+@media (min-width : 768px) {
+   .main-content {
+      padding: 50px;
+   }
+}
+
+.main-content a {
+   color: inherit;
+   text-decoration: inherit;
+}
+
+.title {
+   font-family: 'Libre Barcode 39 Text', cursive;
+   color: #666;
+   margin-bottom: 20px;
+   font-size: 4em;
+}
+
+.description {
+   color: #666;
+   font-size: 1.5em;
+   text-align: justify;
+}

@@ -6,9 +6,19 @@
     <description>Recent content in Hobbies on Stefano Semeraro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 27 Dec 2017 17:03:34 +0100</lastBuildDate>
     
 	<atom:link href="https://suxsem.github.io/portfolio/projects/hobby/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dj</title>
+      <link>https://suxsem.github.io/portfolio/projects/hobby/dj/</link>
+      <pubDate>Wed, 27 Dec 2017 17:03:34 +0100</pubDate>
+      
+      <guid>https://suxsem.github.io/portfolio/projects/hobby/dj/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -1,13 +1,21 @@
+/* fix jumps in chrome mobile when address bar is hidden */
+html, body {
+   height: 100%;
+ }
+.noBarHide {
+   height: 100%;
+   overflow-y: auto;
+}
+
 body {
    background-repeat: repeat;
    background-attachment: fixed;
    font-family: 'Montserrat', sans-serif;
-   overflow-x: hidden;   
+   overflow-x: hidden;
 }
 
 .sidebar {
    background-repeat: no-repeat;
-   background-position-y: 0;
 }
 
 .sidebar-container {
