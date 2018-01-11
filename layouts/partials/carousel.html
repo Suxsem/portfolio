@@ -1,0 +1,24 @@
+<div class="gallery">
+
+   {{ $pageScope := . }}
+   {{ range $index, $element := .Params.Photos }}
+
+   <div id="item-{{ add $index 1}}" class="control-operator"></div>
+   
+   <figure class="item">
+      <img src="/img/photos/{{ $pageScope.File.TranslationBaseName }}/{{ $element }}" />
+   </figure>
+
+   {{end}}
+   
+   <div class="controls">
+
+      {{ range $index, $element := .Params.Photos }}
+
+      <a href="#item-{{ add $index 1}}" class="control-button">•</a>
+
+      {{end}}
+     
+   </div>
+   
+ </div>

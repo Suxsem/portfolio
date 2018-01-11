@@ -14,3 +14,20 @@
    color: inherit;
    text-decoration: inherit;
 }
+
+.qr-banner-container {
+   margin-top: 50px;
+   text-align: left;
+}
+.qr-banner {
+   display: inline-block;   
+   background-color: white;
+}
+.qr-banner img {
+   vertical-align: top;
+}
+.qr-banner span {
+   display: inline-block;
+   padding-top: 20px;
+   padding-right: 20px;
+}

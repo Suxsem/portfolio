@@ -1,5 +1,4 @@
 .main-content {
-   text-align: center;
    padding: 20px;
 }
 
@@ -15,9 +14,15 @@
    text-decoration: inherit;
 }
 
-.projects-header {
+.title {
    font-family: 'Libre Barcode 39 Text', cursive;
    color: #666;
-   text-align: left;
-   margin-bottom: 50px;
+   margin-bottom: 20px;
+   font-size: 4em;
+}
+
+.description {
+   color: #666;
+   font-size: 1.5em;
+   text-align: justify;
 }

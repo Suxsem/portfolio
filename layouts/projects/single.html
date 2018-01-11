@@ -1,0 +1,24 @@
+{{ define "localHead" }}
+   <link rel="stylesheet" href="/libs/gallery.min.css">
+   <link rel="stylesheet" href="/css/project.css" />
+   <link rel="stylesheet" href="/css/carousel.css" />
+   <script src="/js/carousel.js"></script>   
+{{ end }}
+
+{{ define "main" }}
+
+   <div class="title">
+      {{ .Title }}
+   </div>
+
+   <div class="description">
+      {{ .Description }}
+   </div>
+
+   <div class="main-carousel">
+      {{ partial "carousel" . }}         
+   </div>
+
+   {{ .Content }}
+   
+{{ end }}
